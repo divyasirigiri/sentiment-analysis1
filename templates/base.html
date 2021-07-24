@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Welcome to the Sentiment Analysis Page</h1>
+        
+        <form action ='classify' method = "post">
+            <h2>Enter text</h3>
+            <input type='text' name='ip' placeholder = 'enter the text' required = 'required'/>
+            <button type='submit'> Submit </button>
+        <br>
+        <br>
+        {{ prediction_text }}
+        </form>
+    </body>
+</html>
+
+<style>
+    h1 {
+   margin-top: 50px;
+   text-align: center;
+   font: "Lucida Console", "Courier New", monospace;
+
+ }
+ form{
+     text-align: center;
+    
+   }
+ body{
+     text-align: center;
+     background-color:rgb(211, 211, 247);
+     margin-left: 80 px;
+     margin-right: 80 px;
+     font-family: Arial;
+ }
+</style>
